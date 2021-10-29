@@ -1,0 +1,82 @@
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.item-sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.item-suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.item-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.button-learn-more {
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 5%;
+} 
+
+.button-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-suv {
+    color: hsl(184, 100%, 22%);
+}
+
+.button-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 375px) {
+
+    .container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    
+    .container > div {
+        height: 35vh;
+        padding: 18%;
+    }
+
+    .item-sedan {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .item-luxury {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}  
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+    }
+    
+
+}  
