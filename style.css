@@ -1,3 +1,7 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
 p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
@@ -55,18 +59,22 @@ h1 {
         margin-top: 20%;
         margin-bottom: 20%;
     }
-    
-    .container > div {
-        height: 35vh;
-        padding: 18%;
-    }
 
     .item-sedan {
+        height: 35vh;
+        padding: 18%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
     
+    .item-suv {
+        height: 35vh;
+        padding: 18%;
+    }
+
     .item-luxury {
+        height: 35vh;
+        padding: 18%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
@@ -74,9 +82,39 @@ h1 {
 }  
 
 @media screen and (min-width: 1440px) {
+    p {
+        margin-top: 5vh;
+        line-height: 25px;
+    }
 
     .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 65%;
+        height: 15vh;
     }
     
+    .container > div {
+        height: 45vh;
+        padding: 5%;
+    }
 
+    .item-sedan {
+        
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+
+    .item-luxury {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .button-learn-more {
+        margin-top: 55%;
+    } 
 }  
